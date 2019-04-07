@@ -1,0 +1,36 @@
+{
+    "name": "Balance",
+    "fields": [
+        {
+            "fieldName": "ammount",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currency",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "BalanceType",
+            "fieldValues": "END_OF_DAY,AVAILABLE"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "bankAccount",
+            "otherEntityName": "bankAccount",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190407083552",
+    "entityTableName": "balance",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "finologee",
+    "applications": "*",
+    "microserviceName": "finologee"
+}

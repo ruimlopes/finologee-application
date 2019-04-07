@@ -1,0 +1,39 @@
+{
+    "name": "BankUser",
+    "fields": [
+        {
+            "fieldName": "bankAccountId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "bankAccount",
+            "otherEntityName": "bankAccount",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190407083551",
+    "entityTableName": "bank_user",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "finologee",
+    "applications": "*",
+    "microserviceName": "finologee"
+}
