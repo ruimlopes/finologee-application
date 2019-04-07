@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "gitCompany": "",
+    "baseName": "finologee",
+    "packageName": "com.finologee.jhipster.application",
+    "packageFolder": "com/finologee/jhipster/application",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.2",
+    "jwtSecretKey": "Y2NlOGEyN2JmODg3ZDlmYzJjOTE0MDhlYjQ3YzQxYjY4ZmMyZjEzNWI3NDYxNDQxMDdkYjhiZDY1NTcyMjhkNmJjOGU0YmUwOTlmMzI3ZmZlODI2ZjJjMGE4MjM4NmNjNDIwZTM1YjAwNWM0ZmQxYjZhY2YzYWYwZTk1YmQ0NDE=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  },
+  "git-provider": "GitHub",
+  "git-company": "ruimlopes",
+  "repository-name": "finologee-application"
+}
