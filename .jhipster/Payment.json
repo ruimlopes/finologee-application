@@ -1,0 +1,45 @@
+{
+    "name": "Payment",
+    "fields": [
+        {
+            "fieldName": "amount",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "currency",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "beneficiaryAccountNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "beneficiaryName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "communication",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creationDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "PaymentStatus",
+            "fieldValues": "EXECUTED"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190407083553",
+    "entityTableName": "payment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "finologee",
+    "applications": "*",
+    "microserviceName": "finologee"
+}

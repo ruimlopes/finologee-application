@@ -1,0 +1,50 @@
+{
+    "name": "BankAccount",
+    "fields": [
+        {
+            "fieldName": "accountNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "accountName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "BankAccountStatus",
+            "fieldValues": "ENABLED,BLOCKED"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "payment",
+            "otherEntityRelationshipName": "bankAccount",
+            "relationshipName": "giverAccount",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "bankUser",
+            "otherEntityRelationshipName": "bankAccount",
+            "relationshipName": "user"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "balance",
+            "otherEntityRelationshipName": "bankAccount",
+            "relationshipName": "balance"
+        }
+    ],
+    "changelogDate": "20190407083550",
+    "entityTableName": "bank_account",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "finologee",
+    "applications": "*",
+    "microserviceName": "finologee"
+}
