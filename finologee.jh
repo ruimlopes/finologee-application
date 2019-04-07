@@ -1,0 +1,53 @@
+entity BankAccount {
+    accountNumber String,
+    accountName String,
+    status BankAccountStatus
+}
+
+entity BankUser {
+    bankAccountId Long,
+	username String,
+	password String,
+	address String
+}
+
+entity Balance {
+	ammount String,
+	currency String,
+	type BalanceType
+}
+
+entity Payment {
+    amount BigDecimal,
+    currency String,
+    beneficiaryAccountNumber String,
+    beneficiaryName String,
+    communication String,
+    creationDate LocalDate,
+    status PaymentStatus
+}
+
+enum BankAccountStatus {
+    ENABLED, BLOCKED
+}
+
+enum BalanceType {
+    END_OF_DAY, AVAILABLE
+}
+
+enum PaymentStatus {
+    EXECUTED
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	BankAccount{user} to BankUser,
+    BankAccount{balance} to Balance
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	BankAccount{giverAccount} to Payment
+}
+
+
